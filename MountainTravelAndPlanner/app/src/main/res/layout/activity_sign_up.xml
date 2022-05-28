@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.SignUpActivity">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.mountaintravelandplanner.login.CustomView
+        android:id="@+id/full_name"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:hint="Full Name"
+        app:layout_constraintEnd_toEndOf="@+id/signup"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/signup"
+        app:layout_constraintTop_toBottomOf="@+id/signup" />
+
+    <com.example.mountaintravelandplanner.login.CustomView
+        android:id="@+id/email"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text"
+        android:hint=" Enter your Email"
+        app:layout_constraintEnd_toEndOf="@+id/full_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/full_name"
+        app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+    <com.example.mountaintravelandplanner.login.CustomView
+        android:id="@+id/no_hp"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text"
+        android:hint=" Enter your phone number "
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <com.example.mountaintravelandplanner.login.CustomView
+        android:id="@+id/address"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text"
+        android:hint=" Enter your Address"
+        app:layout_constraintEnd_toEndOf="@+id/no_hp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/no_hp"
+        app:layout_constraintTop_toBottomOf="@+id/no_hp" />
+
+    <com.example.mountaintravelandplanner.login.CustomView
+        android:id="@+id/password"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text"
+        android:hint=" Enter your Password"
+        app:layout_constraintEnd_toEndOf="@+id/address"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/address"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <com.example.mountaintravelandplanner.login.CustomView
+        android:id="@+id/konfirm_pass"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text"
+        android:hint=" Konfirmasion your Password"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Register"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/konfirm_pass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/konfirm_pass"
+        app:layout_constraintTop_toBottomOf="@+id/konfirm_pass" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

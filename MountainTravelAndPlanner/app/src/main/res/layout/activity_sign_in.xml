@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.SignInActivity">
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Sign In"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.mountaintravelandplanner.login.CustomView
+        android:id="@+id/customView"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/edit_text"
+        android:hint=" enter your email"
+        app:layout_constraintEnd_toEndOf="@+id/sign_in"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in" />
+
+    <com.example.mountaintravelandplanner.login.CustomView
+        android:id="@+id/customView2"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edit_text"
+        android:hint=" enter your password"
+        app:layout_constraintEnd_toEndOf="@+id/customView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/customView"
+        app:layout_constraintTop_toBottomOf="@+id/customView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Not a member?"
+        app:layout_constraintStart_toStartOf="@+id/customView2"
+        app:layout_constraintTop_toBottomOf="@+id/customView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/customView2" />
+
+    <Button
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Sign In"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/customView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/customView2"
+        app:layout_constraintTop_toBottomOf="@+id/customView2"
+        app:layout_constraintVertical_bias="0.0" />\
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,10 +11,12 @@
         android:theme="@style/Theme.MountainTravelAndPlanner">
         <activity
             android:name=".login.SignInActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
         <activity
             android:name=".login.SignUpActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
         <activity
             android:name=".main.SplashActivity"
             android:exported="true"

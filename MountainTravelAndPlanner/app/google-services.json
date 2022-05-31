@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "502337525795",
+    "project_id": "mountain-travel-and-planner",
+    "storage_bucket": "mountain-travel-and-planner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502337525795:android:5a5e72b559e48a41c17996",
+        "android_client_info": {
+          "package_name": "com.example.mountaintravelandplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502337525795-75aqrcmbbn1td8ip10sm1lkvu2la83er.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mountaintravelandplanner",
+            "certificate_hash": "97e37274a697bb902727b4590c83d52ff6255111"
+          }
+        },
+        {
+          "client_id": "502337525795-cf6na4m4d714pmkk8ifakufl8smltbjb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9OQbQSjZRe2CvxfpjqS50fGEVLVr_0bY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502337525795-cf6na4m4d714pmkk8ifakufl8smltbjb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

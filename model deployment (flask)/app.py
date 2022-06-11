@@ -8,7 +8,7 @@ import requests
 app = Flask(__name__)
 
 # load the model, and pass in the custom metric function
-model = tf.keras.models.load_model('recommendation_rankingbased(dim32).h5')
+model = tf.keras.models.load_model('gs://mountain-travel/recommendation_rankingbased(dim32).h5')
 
 @app.route("/")
 def hello_world():
@@ -18,7 +18,7 @@ def hello_world():
 @app.route("/predict/<int:id>", methods=["GET"])
 def predict(id):
     test_ratings = {}
-    test_mountain_ids = np.arange(1, 233)
+    test_mountain_ids = np.arange(1, 213)
     for mountain_id in test_mountain_ids:
         test_ratings[mountain_id] = model({
             "user_id": np.array([id]),

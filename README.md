@@ -27,6 +27,50 @@ To deploy our model, we decided to use Flask API and run it using virtual machin
         "prediction":[34,171,199,128,138,74,203,149,146,189]
     }
 ```
+#### Additional Information
+
+* Cloud Firestore for Mountain Database
+    * Base URL : `https://firestore.googleapis.com/v1beta1/projects/mountain-travel-bangkit/databases/(default)/documents/mountain/`
+    * Method : `GET`
+    * Request example : `https://firestore.googleapis.com/v1beta1/projects/mountain-travel-bangkit/databases/(default)/documents/mountain/1`
+    * Result example :
+
+```javascript
+ {
+  "name": "projects/mountain-travel-bangkit/databases/(default)/documents/mountain/1",
+  "fields": {
+    "Nama": {
+      "stringValue": "Gunung Patas"
+    },
+    "ID": {
+      "stringValue": "1"
+    },
+    "Provinsi": {
+      "stringValue": "Bali"
+    },
+    "Wilayah": {
+      "stringValue": "Bali dan  Nusa Tenggara"
+    },
+    "Ketinggian": {
+      "integerValue": "1414"
+    },
+    "Aktif (Aktif/Tidak Aktif)": {
+      "stringValue": "Tidak Aktif"
+    },
+    "Kota/Kab": {
+      "stringValue": "Buleleng"
+    },
+    "Deskripsi": {
+      "stringValue": "Gunung Patas memiliki ketinggian 1.414 meter dari permukaan laut yang terletak di Kecamatan Gerokgak. Ada banyak jalur untuk mendaki gunung ini. Jalur pendakian ini biasanya dibuat oleh masyarakat di sekitar Gerokgak dan Sepang. Salah satu jalurnya bisa melalui tempat wisata Bendungan Gerokgak. Jalurnya cukup panjang dengan medan naik turun bukit."
+    },
+    "Level (Pemula/Mahir)": {
+      "stringValue": "Pemula"
+    }
+  },
+  "createTime": "2022-06-07T05:32:09.098728Z",
+  "updateTime": "2022-06-07T05:32:09.098728Z"
+ }
+```
 
 ### Reference
 * [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))

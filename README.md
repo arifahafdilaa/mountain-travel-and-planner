@@ -15,30 +15,19 @@ One of the features that this app provides is a list of mountain recommendations
 ### Deployment using Flask and Google Compute Engine
 To deploy our model, we decided to use Flask API and run it using virtual machine on google compute engine. The Flask API will receives id user and return ten mountain ids based on the prediction result. As additional information, it wil also show the name of the mountains for all those ids that were called from Cloud Firestore using REST API. 
 
-* Flask API,
+* Base URL : `http://34.101.162.201:5000/`
+* Method : `POST`
+* Request example : `http://34.101.162.201:5000/predict/1` 
+* Result example :   
 
 ```javascript
-    var specificLanguage_code = 
     {
-        "data": {
-            "lookedUpPlatform": 1,
-            "query": "Kasabian+Test+Transmission",
-            "lookedUpItem": {
-                "name": "Test Transmission",
-                "artist": "Kasabian",
-                "album": "Kasabian",
-                "picture": null,
-                "link": "http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"
-            }
-        }
+        "data":1,
+        "name":["Gunung Lakaan","Gunung Welirang","Gunung Marapi","Gunung Baluran","Gunung Gambiran","Gunung Pangparang","Gunung Singgalang","Gunung Kumbang","Gunung Kembar I","Gunung Krakatau"],
+        "prediction":[34,171,199,128,138,74,203,149,146,189]
     }
 ```
-    Markup :  [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
-* Virtual machine
-Markup :  ### Heading 3 ###
-
 
 ### Reference
 * [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))
-* 
 * [Deploying an ML Model on Google Compute Engine](https://towardsdatascience.com/deploying-a-custom-ml-prediction-service-on-google-cloud-ae3be7e6d38f)
